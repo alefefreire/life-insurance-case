@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "life-insurance"
+version = "0.1.0"
+description = "Predict annual customer costs for a health insurer using demographic data"
+authors = ["Alefe Almeida <alefeofdealmeida@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.16"
+kaleido = "0.2.1"
+ipykernel = "^6.29.5"
+openpyxl = "^3.1.5"
+pycaret = "^3.3.2"
+pydantic = "^2.10.4"
+seaborn = "^0.13.2"
+shap = "^0.46.0"
+catboost = "^1.2.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build: ./
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+      - ./notebooks:/app/notebooks
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    restart: unless-stopped
