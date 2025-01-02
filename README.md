@@ -7,7 +7,7 @@ To set up the project, follow these steps:
 
 1. Clone the repository to your local machine:  
    ```bash
-   git clone git@github.com:alefefreire/life-insurance-case.git
+   git clone https://github.com/alefefreire/life-insurance-case.git
    ```  
 
 2. Navigate to the root directory of the project and run:  
