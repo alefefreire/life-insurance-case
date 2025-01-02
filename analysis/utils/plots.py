@@ -77,10 +77,11 @@ def create_grouped_boxplots(
             box.set(facecolor=colors[i], alpha=0.7)
 
     # Customize plot
-    ax.set_xlabel(x_column, fontsize=12)
-    ax.set_ylabel(y_column, fontsize=12)
+    ax.set_xlabel(x_column, fontsize=20)
+    ax.set_ylabel(y_column, fontsize=20)
     ax.set_xticks(positions)
-    ax.set_xticklabels(categories, fontsize=15)
+    ax.set_xticklabels(categories, fontsize=30)
+    ax.set_yticklabels(ax.get_yticks(), fontsize=30)
     ax.yaxis.grid(True, linestyle="--", alpha=0.7)
 
     # Add legend
@@ -103,7 +104,9 @@ def create_grouped_boxplots(
     # Adjust layout to prevent legend cutoff
     plt.title(title, fontsize=15)
     plt.yticks(fontsize=15)
+    plt.xticks(fontsize=15)
     plt.tight_layout()
+    plt.show()
 
     return fig, ax
 
